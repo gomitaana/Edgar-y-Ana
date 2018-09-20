@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Edgar & Ana</title>
+<meta name="description" content="">
+
+<!-- CSS FILES -->
+<link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="js/inner-js/css/settings.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
+<link rel="stylesheet" type="text/css" href="css/style.css" media="screen" data-name="skins">
+<!--google font style-->
+<link href='http://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
+<!--font-family: 'Great Vibes', cursive; -->
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,400italic,600italic,600,700italic,700' rel='stylesheet' type='text/css'>
+<!--font-family: 'Open Sans', sans-serif; -->
+<!-- font icon css style-->
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<style>
+.menu {
+	position: static;
+	margin: 0;
+}
+</style>
+</head>
+<body>
+
+<!--wrapper start-->
+<div class="wrapper" id="wrapper">
+  <!-- Preloader -->
+  <div id="preloader">
+    <div id="status"></div>
+  </div>
+  <!--Start Header-->
+  <header>
+		<!--menu start-->
+		<div class="menu">
+			<div class="navbar-wrapper">
+				<div class="container">
+					<!--Logo -->
+							<div class="logo">
+										<h1><a href="index.html">Edgar & Ana</a></h1>
+								</div>
+					<!--Logo -->
+					<div class="navwrapper">
+						<div class="navbar navbar-inverse navbar-static-top">
+							<div class="container">
+								<nav class="navArea">
+										<div class="navbar-header">
+											<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+											</div>
+										<div class="navbar-collapse collapse">
+											<ul class="nav navbar-nav" id="navigation">
+												<li class="menuItem" id="home"><a href="./index.html">Inicio</a></li>
+												<li class="menuItem"><a href="./index.html#theCouple">Los novios</a></li>
+												<li class="menuItem"><a href="./index.html#eventsSchedule">Evento</a></li>
+												<!-- <li class="menuItem"><a href="#importantPeople">People</a></li> -->
+												<!-- <li class="menuItem"><a href="#photoAlbum">Gallery</a>
+														 <ul class="submenu">
+											<li><a href="portfolio-full.html">Gallery style 1</a></li>
+											<li><a href="portfolio-threecolumn.html">Gallery style 2</a></li>
+											<li><a href="portfolio-fourcolumn.html">Gallery style 3</a></li>
+										</ul> -->
+												</li>
+												<li class="menuItem"><a href="./index.html#theBlog">Información</a></li>
+												<li class="menuItem"><a href="./index.html#rsvp">Confirma tu asistencia</a></li>
+											</ul>
+										</div>
+								</nav>
+							</div>
+						</div>
+					</div>
+					<!-- End Navbar -->
+				</div>
+			</div>
+		</div>
+		<!--menu end-->
+
+  </header>
+  <!--End Header-->
+
+  <!--start wrapper-->
+  <section class="wrapper">
+    <section class="page_head">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12">
+            <h2>ESTACIONAMIENTO CERCA DE LA IGLESIA</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="content blog">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-12">
+            <div class="blog_large">
+              <article class="post">
+                <div class="post_content medium">
+									<div class="post_meta">
+                    <!--Google map -->
+		            <section class="contactInfo mapArea">
+		              <div id="map" style="width: 100%; height: 100%"></div>
+		            </section>
+		            <!--/Google map -->
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+        <!--/.row-->
+      </div>
+      <!--/.container-->
+    </section>
+  </section>
+  <!--end wrapper-->
+
+  <!--Footer -->
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<p class="white">Edgar & Ana - 27 de Abril 2019</p>
+			</div>
+			<div class="pull-right goto"><a class="gototop smooth" href="#wrapper"><i class="fa fa-chevron-up"></i></a></div>
+		</div>
+	</footer>
+	<!--Footer end -->
+
+</div>
+<!--jquary min js-->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/retina-1.1.0.min.js"></script>
+<script src="js/inner-js/js/jquery.theme.revolution.min.js"></script>
+<script type="text/javascript" src="js/jquery.jcarousel.js"></script>
+<script type="text/javascript" src="js/jquery.isotope.min.js"></script>
+<script type="text/javascript" src="js/swipe.js"></script>
+<script type="text/javascript">
+    //20.684701,-100.441177
+    var map;
+    var iglesia = {lat: 20.5881278, lng: -100.3986504};
+    var iconBase = 'http://work-blackalien.com/icons/';
+    var locations = [
+        {lat: 20.590813, lng: -100.398489},
+        {lat: 20.590813, lng: -100.394304},
+        {lat: 20.590914, lng: -100.398167},
+        {lat: 20.592561, lng: -100.397137},
+        {lat: 20.590854, lng: -100.394390},
+        {lat: 20.591818, lng: -100.393489}
+      ];
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 20.5881278, lng: -100.3986504},
+          zoom: 15
+        });
+        var iglesiaM = new google.maps.Marker({
+          position: iglesia,
+          map: map,
+          title: 'Santa Rosa de Viterbo',
+          icon: iconBase + 'church.png'
+        });
+
+        var i;
+        for (i = 0; i < locations.length; i++) { 
+             var est = new google.maps.Marker({
+              position: locations[i],
+              map: map,
+              title: 'Estacionamiento',
+              icon: iconBase + 'parking.png'
+            });
+        }
+
+      }
+</script>
+<script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQVtFW-BF-3NryAmZ3kDohzq9TxjgU77c&callback=initMap" async defer></script>
+
+<script src="js/main.js"></script>
+<!-- Start Style Switcher -->
+<!--for theme custom jquery-->
+<script src="js/custom.js"></script>
+</body>
+</html>
