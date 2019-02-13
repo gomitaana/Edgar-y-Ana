@@ -30,6 +30,34 @@
 </head>
 <body onLoad="load()" onUnload="GUnload()">
 
+  <!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      xfbml            : true,
+      version          : 'v3.2'
+    });
+  };
+
+  (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- Your customer chat code -->
+<div class="fb-customerchat"
+  attribution=setup_tool
+  page_id="815837912100898"
+  theme_color="#ee6593"
+  logged_in_greeting="Hola, ¿quieres confirmar tu asistencia a la boda de Ana y Edgar?"
+  logged_out_greeting="Hola, ¿quieres confirmar tu asistencia a la boda de Ana y Edgar?">
+</div>
+
+
 <!--wrapper start-->
 <div class="wrapper" id="wrapper">
 <!-- Preloader -->
@@ -38,7 +66,6 @@
 </div>
 <!--Header start -->
 <header>
-
         <!--menu start-->
         <div class="menu">
           <div class="navbar-wrapper">
@@ -382,20 +409,7 @@
                 <i class="fa fa-heart"></i> </div>
               <div class="row">
                 <div id="message"></div>
-                <form method="post" action="php/contact.php" name="cform" id="cform">
-                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 form-group form-row">
-                    <input type="text" class="normal" id="name" placeholder="Nombre" name="name">
-                  </div>
-                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 form-group form-row">
-                    <input type="email" class="normal" id="email" placeholder="Email" name="email">
-                  </div>
-                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 form-group">
-                    <textarea class="message" id="messagetext" name="messagetext" placeholder="Dejanos tu mensaje"></textarea>
-                  </div>
-                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                    <input type="submit" id="submit" name="send" value="Listo para la fiesta" class="button">
-                  </div>
-                </form>
+                <p>Confirma tu asistencia en la burbuja de chat de la esquina.</p>
               </div>
             </div>
           </section>
@@ -471,7 +485,7 @@
         });
       }
 </script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQVtFW-BF-3NryAmZ3kDohzq9TxjgU77c&callback=initMap" async defer></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSqaMmUq1Ttdw0vGNcKDAgW8zkksb1mzY&callback=initMap" async defer></script>
 
 <!--about jquery-->
 <script defer src="js/jquery.flexslider.js"></script>

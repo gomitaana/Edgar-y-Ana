@@ -33,6 +33,33 @@
 </head>
 <body>
 
+  <!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      xfbml            : true,
+      version          : 'v3.2'
+    });
+  };
+
+  (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- Your customer chat code -->
+<div class="fb-customerchat"
+  attribution=setup_tool
+  page_id="815837912100898"
+  theme_color="#ee6593"
+  logged_in_greeting="Hola, ¿quieres confirmar tu asistencia a la boda de Ana y Edgar?"
+  logged_out_greeting="Hola, ¿quieres confirmar tu asistencia a la boda de Ana y Edgar?">
+</div>
+
 <!--wrapper start-->
 <div class="wrapper" id="wrapper">
   <!-- Preloader -->
@@ -183,7 +210,7 @@
       }
 </script>
 <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQVtFW-BF-3NryAmZ3kDohzq9TxjgU77c&callback=initMap" async defer></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSqaMmUq1Ttdw0vGNcKDAgW8zkksb1mzY&callback=initMap" async defer></script>
 
 <script src="js/main.js"></script>
 <!-- Start Style Switcher -->
